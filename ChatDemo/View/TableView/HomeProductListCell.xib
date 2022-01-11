@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="HomeProductListCell" selectionStyle="default" indentationWidth="10" rowHeight="74" id="KGk-i7-Jjw" customClass="HomeProductListCell" customModule="ChatDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRW-RM-cQN">
+                        <rect key="frame" x="10" y="10" width="300" height="50"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWL-G2-BZk">
+                                <rect key="frame" x="55" y="0.0" width="245" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="50" maxY="0.0"/>
+                                <state key="normal" title="Buttonj fhdfhsdf dsfs d">
+                                    <color key="titleColor" red="0.90196078431372551" green="0.41960784313725491" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1454" translatesAutoresizingMaskIntoConstraints="NO" id="5rT-Iz-lFO">
+                                <rect key="frame" x="15" y="7.5" width="35" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="UzT-Ud-yn3"/>
+                                    <constraint firstAttribute="height" constant="35" id="eUn-Q1-DSI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.94901960784313721" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OWL-G2-BZk" secondAttribute="trailing" id="Ldj-ua-Ie0"/>
+                            <constraint firstAttribute="height" constant="50" id="Nr0-hF-sYs"/>
+                            <constraint firstItem="5rT-Iz-lFO" firstAttribute="leading" secondItem="JRW-RM-cQN" secondAttribute="leading" constant="15" id="c5e-BA-y8Q"/>
+                            <constraint firstAttribute="bottom" secondItem="OWL-G2-BZk" secondAttribute="bottom" id="eEH-pD-2Xr"/>
+                            <constraint firstItem="OWL-G2-BZk" firstAttribute="top" secondItem="JRW-RM-cQN" secondAttribute="top" id="iyV-Uk-rdR"/>
+                            <constraint firstItem="5rT-Iz-lFO" firstAttribute="centerY" secondItem="JRW-RM-cQN" secondAttribute="centerY" id="vvg-UO-84m"/>
+                            <constraint firstItem="OWL-G2-BZk" firstAttribute="leading" secondItem="5rT-Iz-lFO" secondAttribute="trailing" constant="5" id="zoa-L5-Vdj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="JRW-RM-cQN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="KzV-rz-ZPw"/>
+                    <constraint firstAttribute="bottom" secondItem="JRW-RM-cQN" secondAttribute="bottom" id="Wsw-2b-qKa"/>
+                    <constraint firstItem="JRW-RM-cQN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ZDJ-8V-HeW"/>
+                    <constraint firstAttribute="trailing" secondItem="JRW-RM-cQN" secondAttribute="trailing" constant="10" id="fEf-Ak-ha9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnName" destination="OWL-G2-BZk" id="XHd-se-CYn"/>
+                <outlet property="viewChat" destination="JRW-RM-cQN" id="he2-cw-RG1"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="56.25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 1454" width="48" height="48"/>
+    </resources>
+</document>
